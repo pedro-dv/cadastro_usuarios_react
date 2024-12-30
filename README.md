@@ -1,8 +1,24 @@
-# React + Vite
+# API de Usuários - Projeto com Express, Prisma e Nodemon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta é uma API para gerenciamento de usuários utilizando **Express** como servidor, **Prisma** como ORM para manipulação do banco de dados e **Nodemon** para reinício automático durante o desenvolvimento.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **GET /usuarios**: Recupera a lista de todos os usuários.
+- **POST /usuarios**: Cria um novo usuário.
+- **DELETE /usuarios/:id**: Exclui um usuário pelo ID.
+
+## Tecnologias Utilizadas
+
+- **Express**: Framework web para Node.js.
+- **Prisma**: ORM para trabalhar com banco de dados.
+- **Nodemon**: Ferramenta para reiniciar automaticamente o servidor durante o desenvolvimento.
+- **Cors**: Middleware para permitir requisições de diferentes origens.
+
+## Pré-requisitos
+
+- Node.js instalado
+- Banco de dados configurado (PostgreSQL, MySQL, etc.)
+
+
+
