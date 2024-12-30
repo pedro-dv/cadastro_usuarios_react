@@ -4,7 +4,7 @@ import api from '../../services/api';
 
 function Home() {
   const [users, setUsers] = useState([]);
-  const slideIndex = useRef(0); // Referência para controlar o índice do slide
+
 
   const inputName = useRef();
   const inputEmail = useRef();
@@ -47,32 +47,7 @@ function Home() {
     }
   }
 
-  // Funções de navegação do slide
-  const nextSlide = () => {
-    if (slideIndex.current < users.length - 1) {
-      slideIndex.current++;
-    } else {
-      slideIndex.current = 0; // Volta ao primeiro slide
-    }
-    updateSlide();
-  };
-
-  const prevSlide = () => {
-    if (slideIndex.current > 0) {
-      slideIndex.current--;
-    } else {
-      slideIndex.current = users.length - 1; // Vai para o último slide
-    }
-    updateSlide();
-  };
-
-  // Atualiza a visibilidade dos slides
-  const updateSlide = () => {
-    const slides = document.querySelectorAll(".slide");
-    slides.forEach((slide, index) => {
-      slide.style.display = index === slideIndex.current ? "block" : "none";
-    });
-  };
+ 
 
   // Chama getUsers ao carregar o componente
   useEffect(() => {
