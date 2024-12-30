@@ -18,7 +18,7 @@ Esta é uma API para gerenciamento de usuários utilizando **Express** como serv
 ## Pré-requisitos
 
 - Node.js instalado
-- Banco de dados configurado (PostgreSQL, MySQL, etc.)
+- Banco de dados configurado (MongoDB)
 
 
 
